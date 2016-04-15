@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/SilentCicero/ethereumjs-accounts"
+    "url": "https://github.com/bigmoby/ethereumjs-accounts.git"
   },
   "keywords": [
     "web3",
     "ethereum",
     "accounts"
   ],
-  "author": "Nick Dodson",
+  "author": "Fabio Mauro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SilentCicero/ethereumjs-accounts/issues"
+    "url": "https://github.com/bigmoby/ethereumjs-accounts/issues"
   },
   "dependencies": {
     "bignumber.js": "^2.0.7",
