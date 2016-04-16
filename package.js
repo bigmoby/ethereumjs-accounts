@@ -1,7 +1,7 @@
 /* jshint ignore:start */
 Package.describe({
     name: 'bigmoby:ethereumjs-accounts',
-    version: '0.0.15',
+    version: '0.0.17',
     summary: 'A simple module for creating, managing and using Ethereum accounts in browser',
     git: 'https://github.com/bigmoby/ethereumjs-accounts.git',
     // By default, Meteor will default to using README.md for documentation.

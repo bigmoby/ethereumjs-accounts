@@ -4,7 +4,7 @@ A simple module for creating, managing and using Ethereum accounts in browser.
 
 Note, this module has not been upgraded. While it will still work with Ethereum dApps, I would recommend using this package instead: https://github.com/ConsenSys/eth-lightwallet.
 
-** About this fork
+## About this fork
 
 This is a fork of silentcicero:ethereum-js accounts.
 
@@ -37,8 +37,8 @@ $ meteor add bigmoby:ethereumjs-accounts
 Require the NPM module or use the standalone browserified version where the 'Accounts' object is global.
 
 ```javascript
-var Accounts = require('ethereumjs-accounts');
-var accounts = new Accounts({minPassphraseLength: 6}); // or new Accounts(..) if using dist.
+var WalletAccounts = require('ethereumjs-accounts');
+var accounts = new WalletAccounts({minPassphraseLength: 6}); // or new Accounts(..) if using dist.
 
 // Generate a new account encrypted with a passphrase
 var accountObject = accounts.new('myPassphrase');
@@ -82,31 +82,31 @@ web3.setProvider(provider);
 
 ## API
 
-- [`Accounts`](#accounts)
-    - [`new Accounts([options])`](#new-accounts)
-    - [`Accounts` Properties](#accounts-properties)
-        - [`Accounts.length`](#property-length) 
-    - [`Accounts` Methods](#accounts-methods)
-        - [`Accounts.new(passphrase)`](#method-new) 
-        - [`Accounts.get(address[, passphrase])`](#method-get) 
-        - [`Accounts.set(address, accountObject)`](#method-set) 
-        - [`Accounts.isPassphrase(passphrase)`](#method-isPassphrase) 
-        - [`Accounts.list()`](#method-list) 
-        - [`Accounts.remove(address)`](#method-remove) 
-        - [`Accounts.clear()`](#method-clear) 
-        - [`Accounts.contains(address)`](#method-clear) 
-        - [`Accounts.import()`](#method-import) 
-        - [`Accounts.export()`](#method-export) 
-        - [`Accounts.backup()`](#method-backup) 
-        - [`Accounts.hasAddress(address, callback)`](#hasAddress)
-        - [`Accounts.signTransaction(tx_params, callback)`](#signTransaction)
+- [`WalletAccounts`](#accounts)
+    - [`new WalletAccounts([options])`](#new-accounts)
+    - [`WalletAccounts` Properties](#accounts-properties)
+        - [`WalletAccounts.length`](#property-length) 
+    - [`WalletAccounts` Methods](#accounts-methods)
+        - [`WalletAccounts.new(passphrase)`](#method-new) 
+        - [`WalletAccounts.get(address[, passphrase])`](#method-get) 
+        - [`WalletAccounts.set(address, accountObject)`](#method-set) 
+        - [`WalletAccounts.isPassphrase(passphrase)`](#method-isPassphrase) 
+        - [`WalletAccounts.list()`](#method-list) 
+        - [`WalletAccounts.remove(address)`](#method-remove) 
+        - [`WalletAccounts.clear()`](#method-clear) 
+        - [`WalletAccounts.contains(address)`](#method-clear) 
+        - [`WalletAccounts.import()`](#method-import) 
+        - [`WalletAccounts.export()`](#method-export) 
+        - [`WalletAccounts.backup()`](#method-backup) 
+        - [`WalletAccounts.hasAddress(address, callback)`](#hasAddress)
+        - [`WalletAccounts.signTransaction(tx_params, callback)`](#signTransaction)
         
 ## Browserify
 
 You may browserify ethereumjs-accounts, by installing the npm modules `npm install` and then running the browserify CMD below. Please refer to the examples to see how a standalone browserified version is setup and used.
 
 ```
-$ browserify --s Accounts index.js -o dist/ethereumjs-accounts.js
+$ browserify --s WalletAccounts index.js -o dist/ethereumjs-accounts.js
 ```
 
 ## Components
